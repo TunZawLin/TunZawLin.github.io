@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tun Zaw Lin - System Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="hi-text">HI.</div>
+    </div>
+
+    <div class="grid-background"></div>
+    <div class="vignette"></div>
+
+    <div class="main-container">
+        
+        <div class="top-bar">
+            <div class="corner-bracket tl"></div>
+            <div class="corner-bracket tr"></div>
+            <div class="corner-bracket bl"></div>
+            <div class="corner-bracket br"></div>
+            
+            <div class="level-display">
+                <div>
+                    <div class="level-num">24</div>
+                    <div class="level-label">LEVEL</div>
+                </div>
+            </div>
+
+            <div class="exp-display">
+                <div class="exp-icon"></div>
+                <div class="exp-num">∞</div>
+                <div class="level-label">CURIOSITY POINTS</div>
+            </div>
+
+            <div>
+                <div class="time-display">MYANMAR TIME: <span id="localTime">00:00:00</span></div>
+                <div class="time-display">KOREA TIME: <span id="koreaTime">00:00:00</span></div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            
+            <div class="left-sidebar">
+                <div class="corner-bracket tl"></div>
+                <div class="corner-bracket tr"></div>
+                <div class="corner-bracket bl"></div>
+                <div class="corner-bracket br"></div>
+                
+                <div class="profile-img">
+                    <img src="profile.jpg" alt="Profile">
+                </div>
+
+                <div class="info-section">
+                    <div class="info-label">NAME</div>
+                    <div class="info-value">Tun Zaw Lin</div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-label">OCCUPATION</div>
+                    <div class="info-value">Computer Science & Engineering Student</div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-label">CORPORATION</div>
+                    <div class="info-value">Kyung Hee University</div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-label">AVAILABILITY</div>
+                    <div class="availability-badge">Studying</div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="corner-bracket tl"></div>
+                <div class="corner-bracket tr"></div>
+                <div class="corner-bracket bl"></div>
+                <div class="corner-bracket br"></div>
+
+                <div id="tab-beginning" class="content-section active">
+                    <div class="content-header">HEY, I'M TUN ZAW LIN</div>
+                    
+                    <p class="intro-text">
+                        I'm a <strong>curious explorer from Myanmar</strong>, now studying in Korea. Fascinated by the universe—from distant stars to the tiniest particles—I've enjoy learning how <strong>technology and human curiosity</strong> come together to shape our world. When I'm not coding or studying, you might find me <strong>stargazing</strong>, listening to music, or exploring new ideas and adventures.
+                    </p>
+
+                    <div class="section-divider"></div>
+
+                    <div class="content-header">MY JOURNEY</div>
+                    
+                    <p class="intro-text">
+                        I began my studies at <strong>MIIT in Myanmar</strong>, focusing on computer science and engineering. Now, I'm continuing my education at <strong>Kyung Hee University in Korea</strong>, where I'm expanding my skills, experimenting with projects, and exploring how technology can create new possibilities.
+                    </p>
+
+                    <div class="section-divider"></div>
+
+                    <div class="content-header">BEYOND THE SCREEN</div>
+                    
+                    <p class="intro-text">
+                        Life isn't just code and lectures. I'm interested in <strong>astronomy, space exploration</strong>, and the mysteries of the universe. I also enjoy <strong>music that tells a story</strong>, gaming sessions that test my skills, and connecting ideas across science, culture, and creativity. <strong>Curiosity and imagination</strong> guide me, both online and offline.
+                    </p>
+                </div>
+                
+                <div id="tab-achievements" class="content-section">
+                    <div class="content-header">PROJECTS & PASSIONS</div>
+
+                    <div class="achievement-card">
+                        <div class="rarity-badge rarity-epic">CURRENT PROJECT</div>
+                        <div class="achievement-icon">🛠️</div>
+                        <div class="achievement-title">CCE Helper</div>
+                        <div class="achievement-desc">
+                            A tool designed to guide international students, workers, and tourists through cultural etiquette. 
+                            Combining coding with real-world problem-solving to help people adapt and navigate new cultures.
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+                    <div class="content-header">INTERESTS & INSPIRATIONS</div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🔭</div>
+                        <div class="achievement-title">Exploring the Universe</div>
+                        <div class="achievement-desc">
+                            Stargazing and contemplating the cosmos. Inspired by space-themed movies and documentaries like 
+                            Interstellar, The Martian, Cosmos: A Spacetime Odyssey, and Apollo 11.
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎵</div>
+                        <div class="achievement-title">Music</div>
+                        <div class="achievement-desc">
+                            Justin Bieber, Joji, Travis Scott, NewJeans, Monsta X — a mix of chill and energetic vibes that fuel creativity and focus.
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎮</div>
+                        <div class="achievement-title">Games</div>
+                        <div class="achievement-desc">
+                            Dota 2, Dead by Daylight, Little Nightmares — strategy, suspense, and story-driven experiences that test skills and imagination.
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+                    <div class="content-header">CURIOSITY & CREATIVITY</div>
+
+                    <p class="intro-text">
+                        I enjoy connecting ideas across fields—astronomy, computer science, and culture—and experimenting with projects that let me combine learning with imagination. 
+                        I'm always exploring new languages, ideas, and concepts to see the world from different angles.
+                    </p>
+                </div>
+
+                <div id="tab-visuals" class="content-section">
+                    <div class="content-header">VISUALS - EXPLORATIONS</div>
+                    <p class="intro-text" style="margin-bottom: 1.5rem;">
+                        A collection of visual interpretations reflecting my interests. Hover over an image to learn more.
+                    </p>
+                    <div class="visual-grid-container">
+                        <div class="visual-item">
+                            <img src="interstellar_ascii_color.png" alt="Colored ASCII Art of Interstellar Scene" class="visual-image">
+                            <div class="visual-overlay">
+                                <div class="visual-title">INTERSTELLAR</div>
+                                <div class="visual-desc">A tribute to one of my favorite films. It captures the stark beauty and mystery of exploration.</div>
+                            </div>
+                        </div>
+                        <div class="visual-item">
+                            <img src="eren_ascii_color.png" alt="Colored ASCII Art of Eren Yeager" class="visual-image">
+                             <div class="visual-overlay">
+                                <div class="visual-title">ATTACK ON TITAN</div>
+                                <div class="visual-desc">This scene from AOT represents that powerful, simple yearning for freedom and discovery.</div>
+                            </div>
+                        </div>
+                        <div class="visual-item">
+                            <img src="breaking_bad_ascii_color.png" alt="Colored ASCII Art of Breaking Bad" class="visual-image">
+                             <div class="visual-overlay">
+                                <div class="visual-title">BREAKING BAD</div>
+                                <div class="visual-desc">A legendary, perfectly crafted show. This iconic scene captures the complex dynamic at the heart of the series.</div>
+                            </div>
+                        </div>
+                        <div class="visual-item">
+                             <img src="justin_bieber_ascii_color.png" alt="Colored ASCII Art of Justin Bieber 'I'll Show You'" class="visual-image">
+                             <div class="visual-overlay">
+                                <div class="visual-title">I'LL SHOW YOU</div>
+                                <div class="visual-desc">From the Justin Bieber music video. The song and its visuals resonate with me on a personal level.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-interests" class="content-section">
+                    <div class="content-header">PERSONAL LINKS</div>
+                    <p class="intro-text" style="margin-bottom: 2rem;">
+                        Connect with me across different platforms. Each link represents a different part of my digital life—from code to music, gaming to visual inspirations.
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                        <a href="https://github.com/TunZawLin" target="_blank" class="link-card">
+                            <i class="fab fa-github link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">GitHub</div>
+                                <div class="link-desc">Coding projects, experiments, and contributions</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/tun-zaw-lin-490b89224/" target="_blank" class="link-card">
+                            <i class="fab fa-linkedin link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">LinkedIn</div>
+                                <div class="link-desc">Academic and professional journey</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="https://open.spotify.com/user/31674jasljxkkntk4jy5w3mamni4" target="_blank" class="link-card">
+                            <i class="fab fa-spotify link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">Spotify</div>
+                                <div class="link-desc">Music I listen to and playlists I follow</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="https://www.facebook.com/general.envy" target="_blank" class="link-card">
+                            <i class="fab fa-facebook link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">Facebook</div>
+                                <div class="link-desc">Personal updates and connections</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="https://www.instagram.com/general.envy/" target="_blank" class="link-card">
+                            <i class="fab fa-instagram link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">Instagram</div>
+                                <div class="link-desc">Visual inspirations, photos, and daily life</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="httpsD://discordapp.com/users/548730266022182933" target="_blank" class="link-card">
+                            <i class="fab fa-discord link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">Discord</div>
+                                <div class="link-desc">Chat, communities, and gaming connections</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="https...steamcommunity.com/id/thihaaung122002/" target="_blank" class="link-card">
+                            <i class="fab fa-steam link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">Steam</div>
+                                <div class="link-desc">Gaming profile and activity</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+
+                        <a href="https://www.reddit.com/user/GeneralMF13/" target="_blank" class="link-card">
+                            <i class="fab fa-reddit link-icon"></i>
+                            <div class="link-content">
+                                <div class="link-title">Reddit</div>
+                                <div class="link-desc">Discussions, interests, and community engagement</div>
+                            </div>
+                            <div class="link-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-sidebar">
+                <div class="corner-bracket tl"></div>
+                <div class="corner-bracket tr"></div>
+                <div class="corner-bracket bl"></div>
+                <div class="corner-bracket br"></div>
+
+                <div class="quest-header">
+                    <div class="quest-title">ACTIVE QUEST</div>
+                    <div class="quest-close">×</div>
+                </div>
+
+                <div class="quest-name">QUEST NAME</div>
+                <div class="quest-objective">CONNECT WITH ME</div>
+
+                <div class="quest-description">
+                    Reach out if you want to discuss AI, astronomy, tech, Korean culture, or just want to chat about Travis Scott's latest drop! I'm always open to interesting conversations and collaborations.
+                </div>
+
+                <div class="quest-description">
+                    <strong>Currently exploring:</strong> How AI models can analyze astronomical data and find patterns in the cosmos 🌌
+                </div>
+
+                <div class="rewards-section">
+                    <div class="rewards-label">REWARDS</div>
+                    <div class="reward-icons">
+                        <div class="reward-icon">
+                            🤝
+                            <div class="reward-value">∞</div>
+                        </div>
+                        <div class="reward-icon">
+                            💡
+                            <div class="reward-value">+∞</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-tab active" data-tab="tab-beginning">BEGINNING</div>
+            <div class="nav-tab" data-tab="tab-achievements">PROJECTS & PASSIONS</div>
+            <div class="nav-tab" data-tab="tab-visuals">VISUALS</div>
+            <div class="nav-tab" data-tab="tab-interests">LINKS</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
