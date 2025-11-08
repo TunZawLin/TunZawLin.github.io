@@ -8,7 +8,7 @@ body {
     font-family: 'Rajdhani', sans-serif;
     background: #000;
     color: #e5e7eb;
-    overflow-y: auto; /* <-- CHANGED */
+    overflow-y: auto; 
 }
 
 /* Animated Grid Background */
@@ -58,7 +58,7 @@ body {
 .main-container {
     position: relative;
     z-index: 2;
-    min-height: 100vh; /* <-- CHANGED */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -156,7 +156,6 @@ body {
     grid-template-columns: 250px 1fr 300px;
     gap: 1rem;
     flex: 1;
-    /* All overflow/height properties removed */
 }
 
 /* Left Sidebar */
@@ -165,7 +164,6 @@ body {
     border: 1px solid rgba(239, 68, 68, 0.5);
     padding: 1.5rem;
     position: relative;
-    /* overflow-y: auto; REMOVED */
 }
 
 .profile-img {
@@ -252,7 +250,6 @@ body {
     border: 1px solid rgba(239, 68, 68, 0.5);
     padding: 2rem;
     position: relative;
-    /* overflow-y: auto; REMOVED */
 }
 
 .content-header {
@@ -495,7 +492,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Link Card (from tab-interests) */
+/* Link Card */
 .link-card {
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(239, 68, 68, 0.3);
@@ -546,7 +543,6 @@ body {
     transform: translateX(5px);
 }
 
-/* UPDATED: Styles for Visuals Tab (4-quarter grid) */
 .visual-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -586,7 +582,7 @@ body {
 }
 
 .visual-item:hover .visual-image {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
 }
 
 .visual-overlay {
@@ -651,12 +647,12 @@ body {
 
 @media (max-width: 768px) {
     .visual-grid-container {
-        grid-template-columns: 1fr; /* Stack visuals vertically */
-        aspect-ratio: auto; /* Remove fixed aspect ratio */
+        grid-template-columns: 1fr; 
+        aspect-ratio: auto; 
         height: auto;
     }
     .visual-item {
-        /* Give each item a fixed aspect ratio so they look good stacked */
         aspect-ratio: 16 / 9;
     }
+
 }
