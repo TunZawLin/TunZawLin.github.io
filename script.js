@@ -8,7 +8,6 @@ function updateTimes() {
     const koreaTimeEl = document.getElementById('koreaTime');
 
     if (localTimeEl) {
-        // Use Asia/Yangon for Myanmar time
         const myanmarTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Yangon' }));
         localTimeEl.textContent = myanmarTime.toLocaleTimeString();
     }
