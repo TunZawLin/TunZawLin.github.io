@@ -1,9 +1,7 @@
-// Welcome screen
 setTimeout(() => {
     document.getElementById('welcomeScreen').classList.add('hidden');
 }, 3000);
 
-// Time updates
 function updateTimes() {
     const now = new Date();
     const localTimeEl = document.getElementById('localTime');
@@ -23,7 +21,6 @@ function updateTimes() {
 updateTimes();
 setInterval(updateTimes, 1000);
 
-// Tab navigation
 const tabs = document.querySelectorAll('.nav-tab');
 const sections = document.querySelectorAll('.content-section');
 
